@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.alfrosoft.kwiqshopapp">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        tools:ignore="ScopedStorage" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.KwiqShopApp"
+        tools:targetApi="31">
+        <activity android:name="com.alfrosoft.kwiqshopapp.activities.SoldProductDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"
+            tools:ignore="LockedOrientationActivity"/>
+        <activity
+            android:name="com.alfrosoft.kwiqshopapp.activities.MyOrderDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.alfrosoft.kwiqshopapp.activities.CheckoutActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.alfrosoft.kwiqshopapp.activities.AddEditAddressActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.alfrosoft.kwiqshopapp.activities.AddressListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.alfrosoft.kwiqshopapp.activities.CartListActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.alfrosoft.kwiqshopapp.activities.ProductDetailsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.alfrosoft.kwiqshopapp.activities.AddProductActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.alfrosoft.kwiqshopapp.activities.SettingsActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.alfrosoft.kwiqshopapp.activities.DashboardActivity" />
+        <activity
+            android:name="com.alfrosoft.kwiqshopapp.activities.UserProfileActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.alfrosoft.kwiqshopapp.activities.ForgotPasswordActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity android:name="com.alfrosoft.kwiqshopapp.activities.BaseActivity" />
+        <activity
+            android:name="com.alfrosoft.kwiqshopapp.activities.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.alfrosoft.kwiqshopapp.activities.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"
+            android:windowSoftInputMode="adjustResize"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.alfrosoft.kwiqshopapp.activities.SplashActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NoActionBar"
+            tools:ignore="LockedOrientationActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.alfrosoft.kwiqshopapp.activities.MainActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+    </application>
+
+</manifest>
